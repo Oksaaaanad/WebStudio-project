@@ -43,6 +43,7 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-left: 215px;
 
 }
 
@@ -58,12 +59,16 @@ ul {
     width: 100%;
   display: flex;
   justify-content: space-between;
- 
+ text-align: center;
+}
+.nav-list-item {
+    padding-right: 25px;
+    padding-left: 25px;
 }
 .header-contacts-list {
     display: flex;
     justify-content: space-between;
-    
+    text-align: center;
 }
 .nav-link {
     font-weight: 500;
@@ -89,7 +94,10 @@ ul {
 .contacts-link:focus {
     color: #2196f3;
 }
-
+.contacts-item {
+    padding-left: 25px;
+    padding-right: 25px;
+}
 /* Main */
 .hero {
     background: #2f303a;
@@ -98,6 +106,7 @@ ul {
     width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .hero-title {
@@ -108,6 +117,7 @@ ul {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #ffffff;
+   padding-top: 200px;
 }
 
 .hero-button {
@@ -123,6 +133,8 @@ ul {
 .features {
     width: 1170px;
     height: 98px;
+    margin-right: 215px;
+    margin-left: 215px;
 }
 .features-title {
     opacity: 0;
@@ -139,6 +151,10 @@ ul {
     display: flex;
     justify-content: space-between;
 }
+.features-list-item {
+    padding-left: 15px ;
+    padding-right: 15px;
+}
 .features-name-decs {
     font-weight: 400;
     line-height: 1.71;
@@ -150,6 +166,10 @@ ul {
 .service {
     width: 1170px;
     height: 386px;
+    margin-top: 94px;
+    margin-left: 215px;
+    margin-right: 215px;
+    margin-bottom: 94px;
 }
 .service-title {
     font-weight: 700;
@@ -162,6 +182,11 @@ ul {
 .service-list {
     display: flex;
     justify-content: space-between;
+    
+}
+.service-list-item {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Our Team */
@@ -203,6 +228,16 @@ footer {
     background-color: #2f303a;
 }
 
+.logo-footer {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.footer-logo-web {
+    color: #2196f3;
+}
 .footer-logo-studio {
     font-family: "Oleo Script";
     font-weight: 700;
@@ -211,7 +246,6 @@ footer {
     letter-spacing: 0.03em;
     color: #ffffff;
 }
-
 .address-name {
     font-weight: 400;
     line-height: 1.71;
