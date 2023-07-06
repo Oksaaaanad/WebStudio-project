@@ -10,14 +10,8 @@ a {
 
 ul {
     list-style: none;
-}
-.wrapper {
-    width: 1600px;
-    height: 2350px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-left: auto;
-        margin-right: auto;
+    margin: 0;
+    padding: 0;
 }
 .box {
     width: 1170px;
@@ -32,6 +26,10 @@ ul {
     width: 1600px;
     height: 80px;
      max-width: 100%;
+     padding-left: 15px;
+     padding-right: 15px;
+     margin-left: auto;
+     margin-right: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -133,8 +131,10 @@ ul {
 .features {
     width: 1170px;
     height: 98px;
-    margin-right: 215px;
-    margin-left: 215px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-right: 215px;
+    margin-left: 215px; */
 }
 .features-title {
     opacity: 0;
@@ -166,9 +166,11 @@ ul {
 .service {
     width: 1170px;
     height: 386px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 94px;
-    margin-left: 215px;
-    margin-right: 215px;
+    /* margin-left: 215px;
+    margin-right: 215px; */
     margin-bottom: 94px;
 }
 .service-title {
@@ -193,6 +195,8 @@ ul {
 .team {
     width: 1600px;
     height: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .team-title {
     font-size: 36px;
@@ -225,6 +229,8 @@ ul {
 footer {
     width: 1600px;
     height: 252px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #2f303a;
 }
 
