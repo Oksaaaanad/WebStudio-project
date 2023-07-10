@@ -31,10 +31,8 @@ ul {
      margin-left: auto;
      margin-right: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
-
 .logo {
     font-family: "Raleway";
     font-weight: 700;
@@ -54,19 +52,21 @@ ul {
 }
 
 .nav-list {
-    width: 100%;
   display: flex;
-  justify-content: space-between;
  text-align: center;
+ margin-left: 93px;
 }
-.nav-list-item {
-    padding-right: 25px;
-    padding-left: 25px;
+
+.nav-list-item + .nav-list-item {
+    margin-left: 50px;
 }
 .header-contacts-list {
     display: flex;
-    justify-content: space-between;
-    text-align: center;
+    margin-left: auto;
+}
+.contacts-item + .contacts-item {
+    margin-left: 50px;
+    margin-right: 215px;
 }
 .nav-link {
     font-weight: 500;
@@ -102,12 +102,17 @@ ul {
     outline: 2px solid black;
     height: 600px;
     width: 1600px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
 .hero-title {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -119,27 +124,30 @@ ul {
 }
 
 .hero-button {
+margin: 0 auto;
+display: block;
+    margin-top: 30px;
+    padding: 10px 32px;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.06em;
     text-align: center;
     color: white;
     background-color: #2196f3;
+    border-radius: 4px;
 }
 
 /* Друга секція */
 .features {
-    width: 1170px;
-    height: 98px;
     margin-left: auto;
     margin-right: auto;
-    /* margin-right: 215px;
-    margin-left: 215px; */
+    margin-top: 94px;
+    margin-bottom: 94px;
 }
 .features-title {
     opacity: 0;
+    margin: 0;
 }
-
 .features-name {
     font-weight: 700;
     line-height: 1.14;
@@ -149,11 +157,12 @@ ul {
 }
 .features-list {
     display: flex;
-    justify-content: space-between;
 }
 .features-list-item {
-    padding-left: 15px ;
-    padding-right: 15px;
+    width: 270px;
+}
+.features-list-item + .features-list-item {
+    margin-left: 30px;
 }
 .features-name-decs {
     font-weight: 400;
@@ -164,10 +173,7 @@ ul {
 
 /* What We Do */
 .service {
-    width: 1170px;
-    height: 386px;
-    margin-left: auto;
-    margin-right: auto;
+   
     margin-top: 94px;
     /* margin-left: 215px;
     margin-right: 215px; */
@@ -180,28 +186,40 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    margin-bottom: 50px;
 }
 .service-list {
     display: flex;
-    justify-content: space-between;
-    
+    margin-left: -30px;
+    /* justify-content: space-between; */
 }
 .service-list-item {
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 60px) / 3);
+    /* margin-left: 30px;
+    margin-right: 30px; */
 }
 
 /* Our Team */
 .team {
-    width: 1600px;
-    height: 650px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 94px;
 }
 .team-title {
     font-size: 36px;
     text-align: center;
     color: #212121;
+    margin-bottom: 50px;
+}
+.team-list {
+    display: flex;
+   margin-left: -30px;
+}
+.team-list-item {
+    margin-left: 30px;
+    flex-basis: calc((100% - 90px) / 4);
+}
+.team-desc {
+    padding: 30px 62px;
 }
 .team-name {
     font-weight: 500;
@@ -220,17 +238,13 @@ ul {
     letter-spacing: 0.03em;
     color: #757575;
 }
-.team-list {
-    display: flex;
-    justify-content: space-between;
-}
-
 /* Footer */
 footer {
-    width: 1600px;
-    height: 252px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #2f303a;
 }
 
